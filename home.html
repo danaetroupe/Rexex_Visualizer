@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Simulator</title>
+    <link rel="stylesheet" href="regex.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Regex Simulator</h1>
+        </header>
+        <main>
+            <section class="simulation">
+                <div class="canvas-container">
+                    <canvas id="regex-canvas" width="600" height="400"></canvas>
+                </div>
+                <form id="regex-form">
+                    <div class="form-group" display = "flex">
+                        <label for="input-text">Input Text:</label>
+                        <input type="text" id="input-text" name="input-text" placeholder="Enter text..." flex = "70%">
+                        <button type="submit" flex = "30%">Submit</button>
+                    </div>
+                    
+                </form>
+            </section>
+            <aside class="sidebar">
+                <h2>Regex Patterns</h2>
+                <form id="regex-pattern-form">
+                    <div class="form-group">
+                        <label for="regex-pattern">Pattern:</label>
+                        <input type="text" id="regex-pattern" name="regex-pattern" placeholder="Enter regex pattern...">
+                    </div>
+                    <div id = "buttons">
+                    <button type="match">rexex_match()</button>
+                    <button type="search">regex_search()</button>
+                    </div>
+                    <!--Regex Content-->
+                    <div class="row">
+                        <div class="label"><p><b>[xyz]</b></p></div>
+                        <div class="description"><p>Matches any one of the enclosed characters.</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>[^xyz]</b></p></div>
+                        <div class="description"><p>Matches anything not enclosed in the brackets.</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>[a-z]</b></p></div>
+                        <div class="description"><p>Matches anything in the ranges.</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>.</b></p></div>
+                        <div class="description"><p>Matches any character.</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>?</b></p></div>
+                        <div class="description"><p><= 1</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>*</b></p></div>
+                        <div class="description"><p>>= 1</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>+</b></p></div>
+                        <div class="description"><p>>= 1</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="label"><p><b>(n)</b></p></div>
+                        <div class="description"><p>n</p></div>
+                    </div>
+                </form>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2024 Spelman College, Department of Computer Science
+                <br>Danae Troupe and Mia Williams</p>
+        </footer>
+    </div>
+</body>
+</html>

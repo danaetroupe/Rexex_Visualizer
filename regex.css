@@ -1,0 +1,130 @@
+body {
+    font-family: Verdana, sans-serif; /* Changed font to Verdana */
+    margin: 0;
+    padding: 0;
+    background-color: #ebf5fb; /* Background color light gray */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Container background white */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #02448d; /* Header background color */
+    color: #f1f3fd; /* Updated header text color */
+    padding: 2px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #f1f3fd; /* Heading text color dark gray */
+}
+
+main {
+    display: flex;
+}
+
+.simulation {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.canvas-container {
+    background-color: #cee6f6; /* Canvas container background color off-white */
+    border: 1px solid #a0d1f0; /* Canvas container border color light gray */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Label text color dark gray */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a0d1f0;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #02448d; /* Button background color */
+    color: #ffffff; /* Button text color white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #1c416a; /* Button hover background color */
+}
+
+.sidebar {
+    flex: 0.55;
+    background-color: #cee6f6; /* Sidebar background color off-white */
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+h2 {
+    color: #333; /* Heading text color dark gray */
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #a0d1f0; /* Footer border color light gray */
+    background-color: #02448d; /* Footer background color */
+    color: #ffffff; /* Footer text color white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#regex-form {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+  }
+  
+.label {
+    flex: 30%;
+}
+
+.description {
+    flex: 70%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
