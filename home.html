@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regex Simulator</title>
     <link rel="stylesheet" href="regex.css">
+    <script src="regex.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,29 +13,30 @@
             <h1>Regex Simulator</h1>
         </header>
         <main>
+            <!-- CANVAS -->
             <section class="simulation">
                 <div class="canvas-container">
                     <canvas id="regex-canvas" width="600" height="400"></canvas>
-                </div>
-                <form id="regex-form">
-                    <div class="form-group" display = "flex">
-                        <label for="input-text">Text to Check:</label>
-                        <input type="text" id="input-text" name="input-text" placeholder="Regex is fun!" flex = "70%">
-                        <button type="submit" flex = "30%">Submit</button>
+                    <div class="regex-form">
+                            <label for="regex-pattern">Pattern:</label>
+                            <input type="text" id="regex-pattern" name="regex-pattern" placeholder="[a-zA-Z ]+!">
+                            <label for="input-text">Text to Check:</label>
+                            <input type="text" id="input-text" name="input-text" placeholder="Regex is fun!" flex = "70%">
                     </div>
-                    
-                </form>
+                    <div>
+                    <button type="match" onclick="match()">rexex_match()</button>
+                    <button type="search" onclick="search()">regex_search()</button>
+                    </div>
+                </div>
             </section>
+
+            <!-- SIDEBAR -->
             <aside class="sidebar">
                 <h2>Regex Patterns</h2>
-                <form id="regex-pattern-form">
-                    <div class="form-group">
-                        <label for="regex-pattern">Pattern:</label>
-                        <input type="text" id="regex-pattern" name="regex-pattern" placeholder="[a-zA-Z ]+!">
-                    </div>
+            
                     <div id = "buttons">
-                    <button type="match">rexex_match()</button>
-                    <button type="search">regex_search()</button>
+                    <button type="match" onclick="match()">rexex_match()</button>
+                    <button type="search" onclick="search()">regex_search()</button>
                     </div>
                     <!--Regex Content-->
                     <div class="row">
@@ -69,9 +71,11 @@
                         <div class="label"><p><b>(n)</b></p></div>
                         <div class="description"><p>n</p></div>
                     </div>
-                </form>
             </aside>
         </main>
+    </div>
+    
+        <!-- FOOTER -->
         <footer>
             <p>&copy; 2024 Spelman College, Department of Computer Science
                 <br>Danae Troupe and Mia Williams</p>
