@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, sans-serif; /* Changed font to Verdana */
+    font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ebf5fb; /* Background color light gray */
@@ -55,7 +55,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333; /* Label text color dark gray */
+    color: #333; 
 }
 
 input[type="text"] {
