@@ -16,28 +16,23 @@
             <!-- CANVAS -->
             <section class="simulation">
                 <div class="canvas-container">
-                    <canvas id="regex-canvas" width="600" height="400"></canvas>
-                    <div class="regex-form">
-                            <label for="regex-pattern">Pattern:</label>
-                            <input type="text" id="regex-pattern" name="regex-pattern" placeholder="[a-zA-Z ]+!">
-                            <label for="input-text">Text to Check:</label>
-                            <input type="text" id="input-text" name="input-text" placeholder="Regex is fun!" flex = "70%">
-                    </div>
-                    <div>
+                    <div id="regex-form">
+                        <!--<label for="regex-pattern">Pattern:</label>-->
+                        <input type="text" id="regex-pattern" name="regex-pattern" placeholder="[a-zA-Z ]+!">
+                        <!--<br><label for="input-text">Text to Check:</label>--><br>
+                        <br><input type="text" id="input-text" name="input-text" placeholder="Regex is fun!" flex = "70%">
+                </div>
+                <canvas id="regex-canvas" width="600" height="350"></canvas>
+                <div id = "buttons">
                     <button type="match" onclick="match()">rexex_match()</button>
                     <button type="search" onclick="search()">regex_search()</button>
-                    </div>
+                    </div>  
                 </div>
             </section>
 
             <!-- SIDEBAR -->
-            <aside class="sidebar">
+            <aside class="sidebar" height = "200">
                 <h2>Regex Patterns</h2>
-            
-                    <div id = "buttons">
-                    <button type="match" onclick="match()">rexex_match()</button>
-                    <button type="search" onclick="search()">regex_search()</button>
-                    </div>
                     <!--Regex Content-->
                     <div class="row">
                         <div class="label"><p><b>[xyz]</b></p></div>
@@ -73,8 +68,7 @@
                     </div>
             </aside>
         </main>
-    </div>
-    
+
         <!-- FOOTER -->
         <footer>
             <p>&copy; 2024 Spelman College, Department of Computer Science

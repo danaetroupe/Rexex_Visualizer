@@ -40,26 +40,17 @@ main {
     background-color: #cee6f6; /* Canvas container background color off-white */
     border: 1px solid #a0d1f0; /* Canvas container border color light gray */
     border-radius: 10px;
-    margin-bottom: 20px;
     padding: 15px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
 label {
-    display: block;
+    /*display: block;*/
     margin-bottom: 5px;
     color: #333; 
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 50%; /* play with this later */
     padding: 10px;
     border: 1px solid #a0d1f0;
     border-radius: 5px;
@@ -81,7 +72,7 @@ button:hover {
 }
 
 .sidebar {
-    flex: 0.55;
+    flex: 1;
     background-color: #cee6f6; /* Sidebar background color off-white */
     border-radius: 10px;
     padding: 20px;
@@ -122,9 +113,4 @@ footer p {
 
 .description {
     flex: 70%;
-}
-
-#buttons {
-    display: flex;
-    justify-content: center;
 }
