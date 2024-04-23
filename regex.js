@@ -15,7 +15,7 @@ function match()
 function search()
 {
     let input = document.getElementById("input-text").value;
-    let pattern = new RegExp(document.getElementById("regex-pattern").value, 'g');
+    let pattern = new RegExp(document.getElementById("regex-pattern").value, 'gd');
 
     let array1;
 
