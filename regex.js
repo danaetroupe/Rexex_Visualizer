@@ -60,6 +60,18 @@ function match()
         ? console.log("Pattern matches.") :
         console.log("Pattern does not match.");
     
+    let resultElement = document.getElementById("regex-canvas");
+
+    let matches = input.match(pattern);
+
+    if (matches !== null) {
+        resultElement.innerHTML = "<strong>Pattern matches:</strong><br>";
+        matches.forEach(match => {
+            resultElement.innerHTML += `<p>"${match}" matches "${pattern}"</p>`;
+        });
+    } else {
+        resultElement.textContent = "Pattern does not match.";
+    }
 }
 
 function search()
