@@ -12,17 +12,21 @@ function drawText(indexes)
         ctx.font = "48px serif";
         let xPos = 0
         let yPos = 0
-        let val;
+        let val = "";
         let index = 0;
         var id;
 
+        holder();
         function holder()
         {
-            val = indexes[index];
-            id = setInterval(animate, 5);
-            setTimeout(holder, 10);
-            xPos += 50;
-            index ++;
+            if (index <= indexes.length)
+            {
+                val += indexes[index];
+                id = setInterval(animate, 5);
+                xPos += 50;
+                index++;
+                setTimeout(holder, 120);
+            } 
         }
 
         function animate()
@@ -36,9 +40,6 @@ function drawText(indexes)
         }
     }
 }
-
-
-
 
 function match()
 {
