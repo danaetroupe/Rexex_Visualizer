@@ -15,15 +15,20 @@ function drawText(indexes)
         let val;
         let index = 0;
         var id;
-        var outId = setInterval(runLoop, 20);
+        var outId;
+        while (index < indexes.length)
+        {
+            var outId = setInterval(runLoop, 60);
+            xPos += 50;
+            index ++;
+        }
+        
 
         function runLoop() 
         {
             if (index < indexes.length) {
                 val = indexes[index];
                 id = setInterval(animate, 5);
-                xPos += 50;
-                index ++;
             } else
             {
                 clearInterval(outId);
