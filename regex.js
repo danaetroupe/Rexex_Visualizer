@@ -6,39 +6,16 @@ const ANIM_SECONDS = 5
 function drawText(indexes)
 {
     const canvas = document.getElementById("regex-canvas")
-    if (canvas)
-    {
-        const ctx = canvas.getContext("2d");
-        ctx.font = "48px serif";
-        let xPos = 0
-        let yPos = 0
-        let val = "";
-        let index = 0;
-        var id;
+    
+    const ctx = canvas.getContext("2d");
+    ctx.font = "48px serif";
+    let text = "";
+    indexes.forEach(match => {
+        text += match + " ";
+    });
 
-        holder();
-        function holder()
-        {
-            if (index <= indexes.length)
-            {
-                val += indexes[index];
-                id = setInterval(animate, 5);
-                xPos += 50;
-                index++;
-                setTimeout(holder, 120);
-            } 
-        }
-
-        function animate()
-        {
-            if (yPos == canvas.height/2) { clearInterval(id);}
-            else {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.fillText(val, xPos, yPos);
-                yPos++;
-            }
-        }
-    }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillText(text, 5, canvas.height/2);
 }
 
 function match()
